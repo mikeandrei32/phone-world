@@ -1,6 +1,14 @@
-body {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body{
+    font-family: "Inter", sans-serif;
 }
+
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: whitesmoke;
+}
+
 .navbar-brand{
 	display: inline-flex;
 	align-items: center;
@@ -22,4 +30,22 @@ body {
 
 #signup-button, #login-button{
 	font-size: 13px;
+}
+
+#home-page-brand{
+	font-size: 70px;
+}
+
+#hero-page{
+	margin-top: 62px;
+}
+
+.privacy{
+	font-size: 12px;
+	color: gray;
+	margin-top: 7px;
+}
+
+#emailBtn{
+	width: 100px;
 }
