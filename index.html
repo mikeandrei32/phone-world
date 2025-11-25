@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PhoneWorld</title>
+    <link rel="shortcut icon" href="images/PhoneWorld.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
@@ -148,7 +149,7 @@
         <div class="container text-center mt-5 pt-5">
             <div class="row align-items-center">
                 <div class="col text-start ps-5">
-                    <h1 class="w-25" id="home-page-brand">Phone World Collection</h1>
+                    <h1 class="w-25" id="home-page-brand"><i>Phone World Collection</i></h1>
                     <p id="home-caption">Transform your digital lifestyle with devices crafted for every need. Whether you seek performance, style, or everyday reliability, our collection brings together the best of modern mobile innovation.</p>
                 </div>
                 <div class="col">
@@ -170,114 +171,239 @@
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Iphone</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Samsung Galaxy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Huawei</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Google Pixel</a>
                     </li>
                 </ul>
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
+                    <i class="bi bi-chevron-double-down"></i>
+                    <button id="featured-button" class="btn btn-white dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Featured
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Featured</a></li>
+                        <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                        <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+                        <li><a class="dropdown-item" href="#">Most Popular</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="container text-center mt-5 mb-5 pb-5">
+    <div class="container text-start mt-5 mb-5 pb-5">
         <div class="row align-items-center g-4">
             <div class="col">
                 <div class="card" style="width: 21rem;">
-                    <img src="..." class="card-img-top img-cover" alt="...">
+                    <img src="images/iphone17promaxx.png" class="card-img-top img-cover" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+                            <h5 class="card-title">iPhone 17 Pro Max</h5>
+                            <button type="button" id="price-button" class="btn btn-warning btn-sm mb-2">$1,478.00</button>
+                        </div>
+                        <p id="phone-brand" class="card-text m-0">IPHONE</p>
+                        <div id="rate" class="container-fluid m-0 p-0 mb-0 mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <p id="reviews">(124)</p>
+                        </div>
+                        <p id="phone-caption" class="card-text">iPhone 17 Pro Max – Power. Precision. Perfection.</p>
+                        <a href="#" class="btn btn-white border w-100 mb-1 rounded-pill">View Details</a>
+                        <a href="#" class="btn btn-dark w-100 rounded-pill"><i class="bi bi-cart4 me-2"></i>Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 21rem;">
-                    <img src="..." class="card-img-top img-cover" alt="...">
+                    <img src="images/googlePixle9a.png" class="card-img-top img-cover" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+                            <h5 class="card-title">Google Pixel 9a</h5>
+                            <button type="button" id="price-button" class="btn btn-warning btn-sm mb-2">$599.00</button>
+                        </div>
+                        <p id="phone-brand" class="card-text m-0">GOOGLE PIXEL</p>
+                        <div id="rate" class="container-fluid m-0 p-0 mb-0 mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star"></i>
+                            <p id="reviews">(80)</p>
+                        </div>
+                        <p id="phone-caption" class="card-text">Pixel 9a – Smart, sleek, and ready for anything.</p>
+                        <a href="#" class="btn btn-white border w-100 mb-1 rounded-pill">View Details</a>
+                        <a href="#" class="btn btn-dark w-100 rounded-pill"><i class="bi bi-cart4 me-2"></i>Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 21rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/galaxy24.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+                            <h5 class="card-title">Samsung Galaxy 24</h5>
+                            <button type="button" id="price-button" class="btn btn-warning btn-sm mb-2">$917.00</button>
+                        </div>
+                        <p id="phone-brand" class="card-text m-0">SAMSUNG</p>
+                        <div id="rate" class="container-fluid m-0 p-0 mb-0 mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <p id="reviews">(118)</p>
+                        </div>
+                        <p id="phone-caption" class="card-text">Galaxy S24 – Power meets style.</p>
+                        <a href="#" class="btn btn-white border w-100 mb-1 rounded-pill">View Details</a>
+                        <a href="#" class="btn btn-dark w-100 rounded-pill"><i class="bi bi-cart4 me-2"></i>Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 21rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/matex6foldable.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+                            <h5 class="card-title">Huawei Mate X6 Foldable</h5>
+                            <button type="button" id="price-button" class="btn btn-warning btn-sm mb-2">$1,648.00</button>
+                        </div>
+                        <p id="phone-brand" class="card-text m-0">HUAWEI</p>
+                        <div id="rate" class="container-fluid m-0 p-0 mb-0 mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star"></i>
+                            <p id="reviews">(56)</p>
+                        </div>
+                        <p id="phone-caption" class="card-text">Huawei Mate X6 – Unfold your possibilities.</p>
+                        <a href="#" class="btn btn-white border w-100 mb-1 rounded-pill">View Details</a>
+                        <a href="#" class="btn btn-dark w-100 rounded-pill"><i class="bi bi-cart4 me-2"></i>Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 21rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/iphone16promax.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+                            <h5 class="card-title">iPhone 16 Pro Max</h5>
+                            <button type="button" id="price-button" class="btn btn-warning btn-sm mb-2">$1,199.00</button>
+                        </div>
+                        <p id="phone-brand" class="card-text m-0">IPHONE</p>
+                        <div id="rate" class="container-fluid m-0 p-0 mb-0 mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <p id="reviews">(215)</p>
+                        </div>
+                        <p id="phone-caption" class="card-text">iPhone 16 Pro Max – Ultimate power in your hands.</p>
+                        <a href="#" class="btn btn-white border w-100 mb-1 rounded-pill">View Details</a>
+                        <a href="#" class="btn btn-dark w-100 rounded-pill"><i class="bi bi-cart4 me-2"></i>Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 21rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/pixel10pro.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+                            <h5 class="card-title">Google Pixel 10 Pro</h5>
+                            <button type="button" id="price-button" class="btn btn-warning btn-sm mb-2">$999.99</button>
+                        </div>
+                        <p id="phone-brand" class="card-text m-0">GOOGLE PIXEL</p>
+                        <div id="rate" class="container-fluid m-0 p-0 mb-0 mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <p id="reviews">(110)</p>
+                        </div>
+                        <p id="phone-caption" class="card-text">Pixel 10 Pro – Capture brilliance, effortlessly.</p>
+                        <a href="#" class="btn btn-white border w-100 mb-1 rounded-pill">View Details</a>
+                        <a href="#" class="btn btn-dark w-100 rounded-pill"><i class="bi bi-cart4 me-2"></i>Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 21rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/samsungGalaxyZfold7.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+                            <h5 class="card-title">Samsung Galaxy Z Fold7</h5>
+                            <button type="button" id="price-button" class="btn btn-warning btn-sm mb-2">$1,632.34</button>
+                        </div>
+                        <p id="phone-brand" class="card-text m-0">SAMSUNG</p>
+                        <div id="rate" class="container-fluid m-0 p-0 mb-0 mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star"></i>
+                            <p id="reviews">(97)</p>
+                        </div>
+                        <p id="phone-caption" class="card-text">Galaxy Z Fold 7 – Fold the future in your hands.</p>
+                        <a href="#" class="btn btn-white border w-100 mb-1 rounded-pill">View Details</a>
+                        <a href="#" class="btn btn-dark w-100 rounded-pill"><i class="bi bi-cart4 me-2"></i>Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 21rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/iphone15promax.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+                            <h5 class="card-title">iPhone 15 Pro Max</h5>
+                            <button type="button" id="price-button" class="btn btn-warning btn-sm mb-2">$849.00</button>
+                        </div>
+                        <p id="phone-brand" class="card-text m-0">IPHONE</p>
+                        <div id="rate" class="container-fluid m-0 p-0 mb-0 mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <p id="reviews">(325)</p>
+                        </div>
+                        <p id="phone-caption" class="card-text">iPhone 15 Pro Max – Innovation at its peak.</p>
+                        <a href="#" class="btn btn-white border w-100 mb-1 rounded-pill">View Details</a>
+                        <a href="#" class="btn btn-dark w-100 rounded-pill"><i class="bi bi-cart4 me-2"></i>Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 21rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/huaweiPuro80Ultra.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+                            <h5 class="card-title">Huawei Pura 80 Ultra</h5>
+                            <button type="button" id="price-button" class="btn btn-warning btn-sm mb-2">$1,529.29</button>
+                        </div>
+                        <p id="phone-brand" class="card-text m-0">HUAWEI</p>
+                        <div id="rate" class="container-fluid m-0 p-0 mb-0 mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star"></i>
+                            <p id="reviews">(56)</p>
+                        </div>
+                        <p id="phone-caption" class="card-text">Huawei Pura 80 Ultra – Ultra performance, pure style.</p>
+                        <a href="#" class="btn btn-white border w-100 mb-1 rounded-pill">View Details</a>
+                        <a href="#" class="btn btn-dark w-100 rounded-pill"><i class="bi bi-cart4 me-2"></i>Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -307,9 +433,9 @@
                         <img class="footer-brand" src="images/PhoneWorld.png" alt="">
                             PhoneWorld
                             <p class="footer-brand-caption text-start">Designed with intention, built for your world. A phone that reflects who you are.</p>
-                            <a class="text-white p-2" href=""><i class="bi bi-facebook"></i></a>
-                            <a class="text-white p-2" href=""><i class="bi bi-instagram"></i></a>
-                            <a class="text-white p-2" href=""><i class="bi bi-github"></i></a>
+                            <a class="text-white p-2" href="https://www.facebook.com/neil.simon.545"><i class="bi bi-facebook"></i></a>
+                            <a class="text-white p-2" href="https://www.instagram.com/yourboiimaiku/"><i class="bi bi-instagram"></i></a>
+                            <a class="text-white p-2" href="https://github.com/mikeandrei32"><i class="bi bi-github"></i></a>
                     </div>
                     <div class="col d-flex flex-column">
                         Quick Links <br>
@@ -330,5 +456,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
