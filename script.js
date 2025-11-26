@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const imgEl = card.querySelector('img');
 		const viewBtn = card.querySelector('a.btn-white');
 		const addBtn = card.querySelector('a.btn-dark');
+		const fullDescEl = card.querySelector('[data-full-description]');
 
 		const price = priceEl ? parseFloat(priceEl.textContent.replace(/[^0-9.]/g, '')) : 0;
 		const reviews = reviewsEl ? parseInt((reviewsEl.textContent || '').replace(/[^0-9]/g, '')) || 0 : 0;
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			brand,
 			reviews,
 			description: captionEl ? captionEl.textContent.trim() : '',
+			fullDescription: fullDescEl ? fullDescEl.getAttribute('data-full-description') : '',
 			image: imgEl ? imgEl.getAttribute('src') : '',
 			viewBtn,
 			addBtn,
@@ -231,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const add = productModalEl.querySelector('#productModalAdd');
 		title.textContent = p.title;
 		img.src = p.image;
-		desc.textContent = p.description;
+		desc.textContent = p.fullDescription || p.description;
 		price.textContent = `$${p.price.toFixed(2)}`;
 		add.onclick = () => {
 			const existing = cart.find(i => i.title === p.title);

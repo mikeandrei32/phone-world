@@ -40,10 +40,6 @@ html, body{
 	display: inline-block;
 }
 
-.navbar .container-fluid{
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
 
 .hero-title{
 	font-size: 2rem;
