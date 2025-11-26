@@ -23,16 +23,16 @@
             </a>
             <ul class="nav justify-content-center d-none d-lg-flex">
                 <li class="nav-item">
-                    <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                    <a class="nav-link text-black nav-hover" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="#" data-bs-toggle="modal" data-bs-target="#orderRequest">Order Request</a>
+                    <a class="nav-link text-black nav-hover" href="#" data-bs-toggle="modal" data-bs-target="#orderRequest">Order Request</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" data-bs-toggle="modal" data-bs-target="#aboutUs" href="#">About</a>
+                    <a class="nav-link text-black nav-hover" data-bs-toggle="modal" data-bs-target="#aboutUs" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="#">Contact</a>
+                    <a class="nav-link text-black nav-hover" data-bs-toggle="modal" data-bs-target="#contact" href="#">Contact</a>
                 </li>
             </ul>
             <div class="d-flex">
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="modal-footer d-flex justify-content-center align-items-center">
-                <button type="button" class="btn btn-dark w-100">Submit Order Request</button>
+                <button type="button" class="btn btn-dark w-100 py-2" data-bs-dismiss="modal">Submit Order Request</button>
             </div>
             </div>
         </div>
@@ -151,7 +151,56 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center align-items-center">
-                    <button type="button" class="btn btn-dark">Explore our Collection</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Explore our Collection</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="modal fade" id="contact" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title py-3 ms-2">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-start">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <h6 class="fw-bold py-2" style="font-size: 18px;">Get in Touch</h6>
+                                <p class="text-secondary" style="font-size: 14px;">Have questions about our products or need help with a order request? We'd love to hear from you!</p>
+                                <div class="d-flex mt-5">
+                                    <i class="bi bi-envelope-heart-fill text-success mt-2 me-3"></i>
+                                    <div>
+                                        <h6 class="m-0 p-0">Email</h6>
+                                        <p class="m-0 p-0 text-secondary">mikeandreigomez8@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-4">
+                                    <i class="bi bi-telephone-plus-fill text-info mt-2 me-3"></i>
+                                    <div>
+                                        <h6 class="m-0 p-0">Phone</h6>
+                                        <p class="m-0 p-0 text-secondary">+63 966 940 7103</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-4">
+                                    <i class="bi bi-geo-fill text-danger mt-2 me-3"></i>
+                                    <div>
+                                        <h6 class="m-0 p-0">Location</h6>
+                                        <p class="m-0 p-0 text-secondary">Philippines, Quezon Province</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-2">
+                                <input type="text" class="form-control py-3" placeholder="Your Name">
+                                <input type="email" class="form-control py-3 mt-3" placeholder="Your Email">
+                                <input type="text" class="form-control py-3 mt-3" placeholder="subject">
+                                <textarea class="form-control pb-5 mt-3" aria-label="With textarea" placeholder="Your Message"></textarea>
+                                <button type="button" class="btn btn-dark w-100 mt-3" data-bs-dismiss="modal">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -225,17 +274,44 @@
         </div>
     <!-- FOR PROMO BUTTON -->
     <div class="modal fade" id="promo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">🎉Holiday Promo🎉</h1>
+            <div class="modal-header bg-warning">
+                <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">🎉 New Comers Promo 🎉</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ...
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h5 class="fw-bolder mb-3">iPhone 15 Pro Max</h5>
+                        <p class="text-secondary mb-3">Welcome to PhoneWorld! As a new customer, enjoy exclusive discounts on premium devices.</p>
+                        <div class="mb-3">
+                            <h6 class="text-muted text-decoration-line-through">Regular Price: $1,299.00</h6>
+                            <h4 class="text-danger fw-bolder">Now: $999.00</h4>
+                            <p class="badge bg-success fs-6">Save $300 (23% OFF)</p>
+                        </div>
+                        <div class="mb-3">
+                            <p class="mb-2"><strong>Features:</strong></p>
+                            <ul class="mb-0">
+                                <li>6.1" Super Retina XDR Display</li>
+                                <li>Advanced Camera System</li>
+                                <li>A17 Pro Chip</li>
+                                <li>All-day Battery Life</li>
+                            </ul>
+                        </div>
+                        <div class="alert alert-info mb-0">
+                            <i class="bi bi-info-circle me-2"></i>
+                            <strong>Offer Valid:</strong> First-time customers only. Limited time offer.
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="images/iphone15promax.png" class="rounded shadow" alt="iPhone 15 Pro Max" style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; display: block; margin: 0 auto;">
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="signup-button" class="btn btn-dark">CONTINUE SHOPPING</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" id="promoAddToCart" class="btn btn-dark"><i class="bi bi-cart4 me-2"></i>Add to Cart - $999.00</button>
             </div>
             </div>
         </div>
@@ -258,17 +334,17 @@
             </div>
         </div>
     </div>
-    <div id="hero-page" class="container-fluid bg-body-tertiary">
+    <div id="hero-page" class="container-fluid">
         <div class="container text-center mt-5 pt-5">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 text-start ps-4">
                     <h1 class="fw-bolder" id="home-page-brand" style="font-family: 'Merriweather', serif;"><i>Phone <br> World <br> Collection</i></h1>
                     <p id="home-caption" style="font-family: 'Merriweather', serif; font-size: 17px;">Transform your digital lifestyle with devices crafted for <br> every need. Whether you seek performance, style, or <br> everyday reliability, our collection brings together the best <br> of modern mobile innovation.</p>
-                    <button class="btn btn-dark py-3 ps-5 pe-5 rounded-pill">Explore Collection</button>
-                    <button class="btn border-dark py-3 ps-5 pe-5 rounded-pill">Order Request</button>
+                    <a href="#Collection"><button class="btn btn-light py-3 ps-5 pe-5 rounded-pill fw-bold">Explore Collection</button></a>
+                    <button class="btn btn-outline-light py-3 ps-5 pe-5 rounded-pill ms-2" data-bs-toggle="modal" data-bs-target="#orderRequest">Order Request</button>
                 </div>
                 <div class="col-lg-4">
-                    <img src="images/iphone17promax.png" class="image w-100" alt="...">
+                    <img src="images/iphone17promax.png" class="image w-100 drop-shadow" alt="iPhone 17 Pro Max" style="filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));">
                 </div>
             </div>
         </div>
@@ -276,7 +352,7 @@
     <div class="container-fluid text-center pt-5 pb-3">
         <div class="row align-items-center">
             <div class="col">
-                <h2>Featured Products</h2>
+                <h2 id="Collection">Featured Products</h2>
                 <p>Each device is crafted with precision, combining premium materials with modern smartphone <br> engineering.</p>
             </div>
         </div>
@@ -565,18 +641,66 @@
                         Quick Links <br>
                         <a class="footer-links link-underline-dark" data-bs-toggle="modal" data-bs-target="#aboutUs" style="cursor: pointer;">About us</a>
                         <a class="footer-links link-underline-dark" data-bs-toggle="modal" data-bs-target="#orderRequest" style="cursor: pointer;">Order Request</a>
-                        <a class="footer-links link-underline-dark" href="">FAQ</a>
-                        <a class="footer-links link-underline-dark" href="">Contact</a>
+                        <a class="footer-links link-underline-dark" data-bs-toggle="modal" data-bs-target="#faq" href="">FAQ</a>
+                        <a class="footer-links link-underline-dark" data-bs-toggle="modal" data-bs-target="#contact" href="">Contact</a>
                     </div>
                     <div class="col">
                         Contact Info
-                        <a class="footer-span link-underline-dark" href=""><i class="bi bi-envelope"></i>mikeandreigomez8@gmail.com</a> 
-                        <a class="footer-span link-underline-dark" href=""><i class="bi bi-telephone-x"></i>63+ 966-940-7103</a>
-                        <a class="footer-span link-underline-dark" href=""><i class="bi bi-geo-alt"></i>Philippines, Quezon Provice</a>
+                        <p class="footer-span link-underline-dark m-0"><i class="bi bi-envelope"></i>mikeandreigomez8@gmail.com</p> 
+                        <p class="footer-span link-underline-dark m-0"><i class="bi bi-telephone-x"></i>63+ 966-940-7103</p>
+                        <p class="footer-span link-underline-dark"><i class="bi bi-geo-alt"></i>Philippines, Quezon Provice</p>
                     </div>
                 </div>
             </div>
         </footer>
+    </div>
+    <!-- FAQ -->
+    <div class="modal fade" id="faq" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title ms-4" style="letter-spacing: 2px;">Frequently Asked Questions (FAQs)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Are your Phone brand new or refurbished?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-secondary">We sell brand-new, sealed, and open-box/refurbished units depending on your preference. Each product clearly states its condition.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                What payment methods do you accept?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-secondary">We accept cash, GCash, bank transfer, credit/debit cards, and installment options.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Do you offer phone repairs or accessories?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-secondary">Yes, we provide basic repairs, screen protectors, cases, chargers, and other accessories.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     
