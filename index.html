@@ -26,10 +26,10 @@
                     <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="#">Order Request</a>
+                    <a class="nav-link text-black" href="#" data-bs-toggle="modal" data-bs-target="#orderRequest">Order Request</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="#">About</a>
+                    <a class="nav-link text-black" data-bs-toggle="modal" data-bs-target="#aboutUs" href="#">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" href="#">Contact</a>
@@ -43,6 +43,119 @@
             </div>
         </div>
     </nav>
+    <!-- ORDER REQUEST -->
+    <div class="modal fade" id="orderRequest" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Order Request</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row align-items-center g-3">
+                    <div class="row mt-3">
+                        <div class="col">
+                            <input type="text" class="form-control py-3" placeholder="Full Name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control py-3" placeholder="Email" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <input type="number" class="form-control py-3" placeholder="Phone Numer" aria-label="Phone Number">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <select class="form-select py-3" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">Google Pixel</option>
+                                <option value="2">Huawei</option>
+                                <option value="3">iPhone</option>
+                                <option value="3">Samsung</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <div class="mb-3">
+                                <textarea class="form-control py-4" placeholder="Comment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center align-items-center">
+                <button type="button" class="btn btn-dark w-100">Submit Order Request</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT US -->
+     <div class="modal fade" id="aboutUs" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">About Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="font-family: 'Merriweather', serif;">
+                    <div class="row ms-5 ps-5">
+                        <div class="col">
+                            <img src="images/iphone16promax.png" class="ms-4 w-75 rounded-circle" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <h5>Handcrafted with Innovation, Designed for Connection</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            At PhoneWorld, we are passionate about connecting people with the latest technology. From flagship smartphones to cutting-edge accessories, we bring you the best devices at competitive prices. Our mission is to make your tech experience seamless, enjoyable, and tailored to your needs.
+                                <br>
+                            We pride ourselves on exceptional customer service, expert advice, and a wide selection of top brands. Whether you’re upgrading your phone, exploring new gadgets, or looking for reliable support, PhoneWorld is your trusted destination for all things mobile.
+                        </div>
+                    </div>
+                    <div class="container bg-body-tertiary rounded py-4 mt-4">
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="letter-spacing: 2px;">Why Choose PhoneWorld?</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="container d-flex justify-content-between">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <i class="bi bi-phone text-danger fs-2"></i>
+                                        <h6 class="mt-2 mb-0">Always Connected</h6>
+                                        <p class="m-0 p-0" style="font-size: 12px;">Stay in touch with friends and family,</p>
+                                        <p class="m-0 p-0" style="font-size: 12px;">no matter where you are.</p>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <i class="bi bi-lightning text-warning fs-2"></i>
+                                        <h6 class="mt-2 mb-0">Powerful Performance</h6>
+                                        <p class="m-0 p-0" style="font-size: 12px;">Effortlessly multitask, game, and stream</p>
+                                        <p class="m-0 p-0" style="font-size: 12px;">with a fast and reliable device.</p>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <i class="bi bi-camera text-primary fs-2"></i>
+                                        <h6 class="mt-2 mb-0">Capture Memories</h6>
+                                        <p class="m-0 p-0" style="font-size: 12px;">High-resolution cameras to immortalize</p>
+                                        <p class="m-0 p-0" style="font-size: 12px;">every special moment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-dark">Explore our Collection</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- FOR CART BUTTON -->
     <div class="offcanvas offcanvas-end" s id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -149,8 +262,8 @@
         <div class="container text-center mt-5 pt-5">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 text-start ps-4">
-                    <h1 id="home-page-brand"><i>Phone <br> World <br> Collection</i></h1>
-                    <p  id="home-caption">Transform your digital lifestyle with devices crafted for <br> every need. Whether you seek performance, style, or <br> everyday reliability, our collection brings together the best <br> of modern mobile innovation.</p>
+                    <h1 class="fw-bolder" id="home-page-brand" style="font-family: 'Merriweather', serif;"><i>Phone <br> World <br> Collection</i></h1>
+                    <p id="home-caption" style="font-family: 'Merriweather', serif; font-size: 17px;">Transform your digital lifestyle with devices crafted for <br> every need. Whether you seek performance, style, or <br> everyday reliability, our collection brings together the best <br> of modern mobile innovation.</p>
                     <button class="btn btn-dark py-3 ps-5 pe-5 rounded-pill">Explore Collection</button>
                     <button class="btn border-dark py-3 ps-5 pe-5 rounded-pill">Order Request</button>
                 </div>
@@ -173,7 +286,7 @@
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Iphone</a>
+                        <a class="nav-link active" aria-current="page" href="#">iPhone</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Samsung Galaxy</a>
@@ -200,10 +313,10 @@
             </div>
         </nav>
     </div>
-    <div class="container text-start mt-5 mb-5 pb-5">
+    <div class="container text-start ps-4 mt-5 mb-5 pb-5">
         <div class="row align-items-center g-5">
-            <div class="col">
-                <div class="card" style="width: 21rem;">
+            <div class="card-images col">
+                <div class="card" style="width: 24rem;">
                     <img src="images/iphone17promaxx.png" class="card-img-top img-cover" alt="...">
                     <div class="card-body">
                         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
@@ -226,8 +339,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 21rem;">
+            <div class="card-images col">
+                <div class="card" style="width: 24rem;">
                     <img src="images/googlePixle9a.png" class="card-img-top img-cover" alt="...">
                     <div class="card-body">
                         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
@@ -250,8 +363,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 21rem;">
+            <div class="card-images col">
+                <div class="card" style="width: 24rem;">
                     <img src="images/galaxy24.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
@@ -274,8 +387,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 21rem;">
+            <div class="card-images col">
+                <div class="card" style="width: 24rem;">
                     <img src="images/matex6foldable.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
@@ -298,8 +411,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 21rem;">
+            <div class="card-images col">
+                <div class="card" style="width: 24rem;">
                     <img src="images/iphone16promax.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
@@ -322,8 +435,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 21rem;">
+            <div class="card-images col">
+                <div class="card" style="width: 24rem;">
                     <img src="images/pixel10pro.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
@@ -346,8 +459,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 21rem;">
+            <div class="card-images col">
+                <div class="card" style="width: 24rem;">
                     <img src="images/samsungGalaxyZfold7.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
@@ -370,8 +483,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 21rem;">
+            <div class="card-images col">
+                <div class="card" style="width: 24rem;">
                     <img src="images/iphone15promax.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
@@ -394,8 +507,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 21rem;">
+            <div class="card-images col">
+                <div class="card" style="width: 24rem;">
                     <img src="images/huaweiPuro80Ultra.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
@@ -450,8 +563,8 @@
                     </div>
                     <div class="col d-flex flex-column">
                         Quick Links <br>
-                        <a class="footer-links link-underline-dark" href="">About us</a>
-                        <a class="footer-links link-underline-dark" href="">Order Request</a>
+                        <a class="footer-links link-underline-dark" data-bs-toggle="modal" data-bs-target="#aboutUs" style="cursor: pointer;">About us</a>
+                        <a class="footer-links link-underline-dark" data-bs-toggle="modal" data-bs-target="#orderRequest" style="cursor: pointer;">Order Request</a>
                         <a class="footer-links link-underline-dark" href="">FAQ</a>
                         <a class="footer-links link-underline-dark" href="">Contact</a>
                     </div>
@@ -466,6 +579,7 @@
         </footer>
     </div>
 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
